@@ -12,7 +12,26 @@
 
 - At this point you have successfully completed the first step and are ready to move on.
 
-## Step 2 - Installing Git and Remotely Connecting
+## Step 2 - Obtaining your CSE 15L Account
+
+- In order to get your CSE 15L account information, you will need to go to this link: [CSE15L](https://sdacs.ucsd.edu/~icc/index.php)
+
+- If this is your first time logging in, under username you will put the same username you use for TritonLink and Canvas and for Student ID you will put your PID.
+![Image](login.png)
+
+- Once you have logged in here, you will see your CSE 15L username under the "Additional Accounts" section. It will be the account name that begins with "cs15lsp23".
+![Image](sure.png)
+
+- Now that you have your username, you want to click on the password change tool above the "Additional Accounts" section to set a password for your CSE 15L account.
+
+- Click the link as seen in the image above that takes you to the password change tool and then on the following screen select "Proceed to the Password Change Tool".
+
+- Once you've reached the screen shown in the image below, you will want to enter your **CSE 15L Username**. After this, you will be taken to a screen where you can set the password for this account.
+![Image](cse15lacc.png)
+
+- We are now done with this step, but make sure to write down this username and password because it will be used later in the lab.
+
+## Step 3 - Installing Git and Remotely Connecting
 
 - For this lab we will need to use a tool called git. If you are using Windows and have not installed this on your device already, go to this link: [Git](https://gitforwindows.org/)
 
