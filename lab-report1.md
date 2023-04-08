@@ -49,7 +49,9 @@
 
 - After this you will be given a prompt in the terminal asking if you want to continue connecting since it is the first time you're connecting to this server. Type in "yes" then hit enter.
 
-![Image](cse15l.png)
+![Image](trust.png)
 
-![Image](cse15l commands.png)
+- Once you have done this, it will prompt you for a password. Type in the password that we set earlier in the lab and hit enter.
+
+
 
