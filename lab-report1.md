@@ -14,10 +14,12 @@
 
 ## Step 2 - Installing Git and Remotely Connecting
 
--
+- For this lab we will need to use a tool called git. If you are using Windows and have not installed this on your device already, go to this link: [Git](https://gitforwindows.org/)
+
+- Once on the page, click the blue download button and run the file. Once it is installed, close and reopen VS Code to allow any changes to take effect.
+![Image](git download.png)
 
 ![Image](cse15l.png)
 
 ![Image](cse15l commands.png)
 
-![Image](cse15l vscode.png)
