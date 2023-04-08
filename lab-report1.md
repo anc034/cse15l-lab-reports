@@ -44,6 +44,11 @@
 - Once the terminal is open, you will want to click the arrow that's next to the plus sign near the top right of the terminal. In this menu, you want to select the "Git Bash" option.
 ![Image](terminal.png)
 
+- We will now begin the process of connecting to a remote server. First, in the terminal you want to write "ssh cs15lsp23xx@ieng6.ucsd.edu" and hit enter. (**Rather than cs15lsp23xx you should write in your username that we found earlier**)
+![Image](ssh.png)
+
+- After this you will be given a prompt in the terminal asking if you want to continue connecting since it is the first time you're connecting to this server. Type in "yes" then hit enter.
+
 ![Image](cse15l.png)
 
 ![Image](cse15l commands.png)
