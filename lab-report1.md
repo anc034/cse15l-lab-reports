@@ -51,7 +51,12 @@
 
 ![Image](trust.png)
 
-- Once you have done this, it will prompt you for a password. Type in the password that we set earlier in the lab and hit enter.
+- Once you have done this, it will prompt you for a password. Type in the password that we set earlier in the lab and hit enter. If you have successfully entered your password you will see something similar to the image below. If you have incorrectly entered your password, the prompt for the password will reappear in the terminal.
+![Image](success.png)
+
+## Step 4 - Running Commands
+
+-
 
 
 
