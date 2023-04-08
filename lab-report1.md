@@ -19,6 +19,12 @@
 - Once on the page, click the blue download button and run the file. Once it is installed, close and reopen VS Code to allow any changes to take effect.
 ![Image](git download.png)
 
+- Now that Git is installed, you want to go back to VS Code and click the "Terminal" button at the top and choose the "New Terminal" option. 
+![Image](newterminal.png)
+
+- Once the terminal is open, you will want to click the arrow that's next to the plus sign near the top right of the terminal. In this menu, you want to select the "Git Bash" option.
+![Image](terminal.png)
+
 ![Image](cse15l.png)
 
 ![Image](cse15l commands.png)
