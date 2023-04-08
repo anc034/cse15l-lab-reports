@@ -71,4 +71,7 @@
 ![Image](commands.png)
 ![Image](cd.png) ![Image](ls.png)
 
+-After you have run all these commands you have successfully completed the first CSE 15L Lab. All you need to do now is type "exit" in the VS Code terminal and hit enter to disconnect from the remote server.
+
+![Image](exit.png)
 
