@@ -15,4 +15,10 @@
 
 - The third screenshot is calling the `main` method and we see that `4123` is being passed through as `args[0]` which is then set as the port number which we can see reflected in the URL's of the first two screenshots.
 
+- As a result of the method calls from the first two screenshots, the else if statement in `handleRequest` is ran since `/add-message` is present in the URL. As a result of this, a String array called `parameters` is created which contains two Strings that are split from the Query of the URL at the `=`. The first string would be everything after the `?` until the `=` and the second string is everything after the `=`.
+
+- After this, the if statement checking if `parameters[0].equals("s")` is ran and that is true in both cases as we can see from the URL and the description given above. Our method then updates `result` by adding `parameters[1]` to the end of the list. In the case of the first screenshot, this would add `"Hello"`, in the second screenshot, this would add `"How are you"`. Both of these method calls are updating the value of result by adding an additional element.
+
+![Image](completeServer.png)
+
 
