@@ -29,4 +29,17 @@
 
 ## Part 2 - Buggy Programs
 
+- If we take the `ArrayExamples.java` file from Lab 3 and look at the `reversed` method, we will find a very glaring issue as soon as we test it. We will discuss what the specific issue is and how to fix it later, but first let's look at a test that returns a result we aren't expecting.
+
+- If we create a JUnit Test such as this one: 
+```
+@Test
+public void testReversed(){
+  int[] input1 = {1,2};
+  assertArrayEquals(new int[]{2,1}, ArrayExamples.reversed(input1));
+  }
+  ```
+-
+
+
 
