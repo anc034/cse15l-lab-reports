@@ -88,5 +88,9 @@ static int[] reversed(int[] arr){
 
 - As we can see by running the JUnit tests we created previously, this version of the method produces the expected result for both tests.
 
+## Part 3 - New Knowledge
+
+-
+
 
 
