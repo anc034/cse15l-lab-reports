@@ -56,7 +56,7 @@
 
 ![Image](ssh.png)
 
-- After this you will be given a prompt in the terminal asking if you want to continue connecting since it is the first time you're connecting to this server. Type in "yes" then hit enter.
+- After this you will be given a prompt in the terminal asking if you want to continue connecting since it is the first time you're connecting to this server. Type in `yes` then hit enter.
 
 ![Image](trust.png)
 
@@ -68,21 +68,21 @@
 
 - Now that we are logged into the remote server, we are able to try some of the commands we learned in class. For example, we are prompted to try ls, which lists the items in the given directory.
 
-- By running the "ls" command, we see that there are only two files in the current directory, hello.txt and perl5.
+- By running the `ls` command, we see that there are only two files in the current directory, hello.txt and perl5.
 
-- By running the "pwd" and "cd / cd ~" commands we can see that we are currently in the home directory because using cd ~ does not change our directory.
+- By running the `pwd` and `cd / cd ~` commands we can see that we are currently in the home directory because using `cd ~` does not change our directory.
 
 - By using some other commands we are given such as "cp" and "mkdir" we can see that these commands don't work with the given directory and throw back errors or return nothing. This could be possibly because we are not giving the right parameters or because the required files aren't present in the directory.
 
-- By using "ls -lat" and "ls -a" we are shown other directories that contain many files.
+- By using `ls -lat` and `ls -a` we are shown other directories that contain many files.
 
-- Finally, by using the "cat /home/linux/ieng6/cs15lsp23/public/hello.txt" command, we are able to see the contents of the hello.txt file printed out. It is worth noting that during the actual lab, this file was missing from the directory so this command returned an error. However, at the time of writing this report, the file has been added so the command runs properly
+- Finally, by using the `cat /home/linux/ieng6/cs15lsp23/public/hello.txt` command, we are able to see the contents of the hello.txt file printed out. It is worth noting that during the actual lab, this file was missing from the directory so this command returned an error. However, at the time of writing this report, the file has been added so the command runs properly
 
 ![Image](commands.png)
 
 ![Image](cd.png) ![Image](ls.png)
 
-- After you have run all these commands you have successfully completed the first CSE 15L Lab. All you need to do now is type "exit" in the VS Code terminal and hit enter to disconnect from the remote server.
+- After you have run all these commands you have successfully completed the first CSE 15L Lab. All you need to do now is type `exit` in the VS Code terminal and hit enter to disconnect from the remote server.
 
 ![Image](exit.png)
 
