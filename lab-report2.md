@@ -7,4 +7,8 @@
 
 - The `main` method in the `StringServer` class is what allows us to use the command line to input the port number to start the server in VS Code. In the following screenshots we will see how these two methods allow the user to add strings and see the total list of strings.
 
-![Image](addHello.png) ![Image](addHow.png)
+![Image](addHello.png) ![Image](addHow.png) ![Image](StringTerminal.png)
+
+- The first two screenshots are showing two separate instances of adding a string to the server and the third screenshot shows the terminal commands necessary to start the server.
+
+-
