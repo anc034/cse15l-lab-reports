@@ -39,7 +39,17 @@ public void testReversed(){
   assertArrayEquals(new int[]{2,1}, ArrayExamples.reversed(input1));
   }
   ```
--
+- We will find that the returned array is `{0,0}` rather than the expected `{1,2}`. This would imply that the code has a very clear bug since it is returning the wrong output. However, in some tests it would be possible to miss this because there are instances where the method would return the correct output.
+
+-For example, take this JUnit Test:
+```
+@Test
+public void testReversed2(){
+int[] input1 = {};
+assertArrayEquals(new int[]{}, ArrayExamples.reversed(input1));
+}
+```
+- We will see that this test actually produces the expected output. Since `input1` was an empty array, the expected return value would simply be another empty array.
 
 
 
