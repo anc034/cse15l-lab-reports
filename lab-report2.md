@@ -39,6 +39,9 @@ public void testReversed(){
   assertArrayEquals(new int[]{2,1}, ArrayExamples.reversed(input1));
   }
   ```
+  
+![Image](reversedTest.png)
+
 - We will find that the returned array is `{0,0}` rather than the expected `{1,2}`. This would imply that the code has a very clear bug since it is returning the wrong output. However, in some tests it would be possible to miss this because there are instances where the method would return the correct output.
 
 -For example, take this JUnit Test:
@@ -49,7 +52,41 @@ int[] input1 = {};
 assertArrayEquals(new int[]{}, ArrayExamples.reversed(input1));
 }
 ```
+
+![Image](reversed2.png)
+
 - We will see that this test actually produces the expected output. Since `input1` was an empty array, the expected return value would simply be another empty array.
+
+- Although this test passed, since we know that at least one test produced an incorrect input, we must look at the code for the `reversed` method and see if we can identify the bug.
+
+- Before making any changes, the `reversed` method looked like this:
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+
+- By looking at this code, we can very clearly see an issue in the return statement and the for loop. First off, the method returns the original array rather than `newArray` meaning that there's already a fundamental issue in the implementation of this code. Secondly, in the for loop, the method is editing the values of `arr` rather than the values of `newArray`, but since `newArray` doesn't have any values defined, each of its values are defaulted to 0 and as a result the values of `arr` are being changed to 0 in the loop.
+
+- This bug is relatively easy to fix as seen here:
+```
+static int[] reversed(int[] arr){
+  int[] newArray = new int[arr.length];
+  for(int i = 0; i < arr.length; i += 1){
+    newArray[i] = arr[arr.length - i - 1];*
+    }
+  return newArray;*
+```
+
+- The lines with changed code are denoted by a `*` at the end. The main changes are that the for loop logic is fixed so that it updates the values of `newArray` starting at the end of `arr` and working its way to the front. Finally, it returns `newArray` instead of `arr`.
+
+![Image](successfulTests.png)
+
+- As we can see by running the JUnit tests we created previously, this version of the method produces the expected result for both tests.
 
 
 
