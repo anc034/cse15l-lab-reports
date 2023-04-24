@@ -52,7 +52,7 @@
 
 ![Image](terminal.png)
 
-- We will now begin the process of connecting to a remote server. First, in the terminal you want to write "ssh cs15lsp23xx@ieng6.ucsd.edu" and hit enter. (**Rather than cs15lsp23xx you should write in your username that we found earlier**)
+- We will now begin the process of connecting to a remote server. First, in the terminal you want to write 'ssh cs15lsp23xx@ieng6.ucsd.edu' and hit enter. (**Rather than cs15lsp23xx you should write in your username that we found earlier**)
 
 ![Image](ssh.png)
 
