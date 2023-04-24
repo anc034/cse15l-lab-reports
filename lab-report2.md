@@ -90,7 +90,9 @@ static int[] reversed(int[] arr){
 
 ## Part 3 - New Knowledge
 
--
+- There are two main things that I learned from the Week 2 and Week 3 labs that were interesting to me. The first thing is that I had heard about github before and how it was used to store projects and different versions of your code, but I didn't know that you could integrate it so well into editors like VS Code and how you could make changes directly from the command line by using commands like `git clone` , `git push`, `git commit` , etc. Before that lab, I thought that you had to manually add the file to the website each time you wanted to make a change so it was interesting to learn that there are more efficient ways to do that process.
+
+- The other main thing was that I didn't know you could host a local server through the terminal in VS Code. I had known that creating a website like this was possible through outside sources, but I didn't know that you could directly code it and run it through the terminal and then access it on your device. It was also interesting to learn about how if the server is being run on a remote server, that it's possible for other people on the same network connection as the server to access that website and make changes that are visible to everyone as we saw in Lab 3. 
 
 
 
