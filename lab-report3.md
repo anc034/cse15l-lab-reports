@@ -138,4 +138,11 @@ $ find ./technical -maxdepth 1 -type f
 find ./technical -empty
 
 ```
+- Note that there is no output below the command, this means that there are no empty files in the given directory or its subdirectories. This could be useful if someone is running code that is supposed to edit or create files and they could use this to check if any of the files are empty, possibly indicating an error.
+- In the case that there was a file that empty, the command would print the directory of the file or directory that is empty starting from the given directory.
+
+8. The last example will be combning `-empty` with `delete`.
+- We already know what each of these commands do individually and what they do on their own, but if combined it could be used to help someone remove files that are useless and just taking up space.
+- For example, if we run `find ./technical -empty -delete` it will delete all empty files or directories as seen here (Note that for this example I addded empty files and directories to the `/technical` directory):
+```
 
