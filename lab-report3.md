@@ -7,7 +7,7 @@
 
 1- The first interesting usage we will look at is the `-maxdepth` modifier for the `find` command. This modifier followed by a number limits the amount of directories `find` travels through dependent on the number you provide.
 
-- For example, `find *args* -maxdepth 2` would only travel through two directories at most.|
+- For example, `find *args* -maxdepth 2` would only travel through two directories at most.
 
 - Now, if we look at our `/technical` directory and run the command `find ./technical -maxdepth 1` we find the output to be this:
 
