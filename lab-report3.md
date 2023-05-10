@@ -1,11 +1,11 @@
 # **CSE 15L Lab Report 3**
 
-## Part 1 - Interesting Command Applications
+## **Part 1 - Interesting Command Applications**
 
 - For this lab report we'll be looking at the `find` command and looking at 4 interesting ways you can use it in the command line.
 - We will see how each command is useful and what it can be used for and we will show examples by using it on files and directories from the `/technical` directory from Lab 4.
 
-1. The first interesting usage we will look at is the `-maxdepth` modifier for the `find` command. This modifier followed by a number limits the amount of directories `find` travels through dependent on the number you provide.
+1- The first interesting usage we will look at is the `-maxdepth` modifier for the `find` command. This modifier followed by a number limits the amount of directories `find` travels through dependent on the number you provide.
 - For example, `find *args* -maxdepth 2` would only travel through two directories at most.|
 - Now, if we look at our `/technical` directory and run the command `find ./technical -maxdepth 1` we find the output to be this:
 
@@ -46,7 +46,7 @@ i.e., -maxdepth affects tests specified before it as well as those specified aft
 
 - This can be useful if you want to reduce the amount of directories and file names you're given as shown above. It can also be useful if you specifically want to know if there's something inside of the specified directory rather than in a subfolder of that directory.
 
-2. Another usage of the `maxdepth` modifier is that if paired with modifiers such as `-f` you can use it to know if a directory contains any files or if it only contains directories.
+2- Another usage of the `maxdepth` modifier is that if paired with modifiers such as `-f` you can use it to know if a directory contains any files or if it only contains directories.
 - For example, if we take the command from the first example:  `find ./technical -maxdepth 1`, we see that it returned a set of directories.
 - However, if we were interested in learning if there were any files in this directory but didn't want to spend time reading the file names, we could run something like `find ./technical -maxdepth 1 -type f`:
 
@@ -60,7 +60,7 @@ $ find ./technical -maxdepth 1 -type f
 
 - Lastly, both of these examples were obtained from [here](https://www.redhat.com/sysadmin/linux-find-command) and I found it by searching for interesing usages for the find command on google.
 
-3. Another usage of the `find` command can come from combining it with the `-exec` flag, this allows you to pass through other commands that run on files you have found with your `find` command.
+3- Another usage of the `find` command can come from combining it with the `-exec` flag, this allows you to pass through other commands that run on files you have found with your `find` command.
 
 - For example, we could run `find ./technical -name "chapter*.txt" -exec wc {} \;` would print out:
 
@@ -88,7 +88,7 @@ $ find ./technical -maxdepth 1 -type f
 
 - Using the command in this way could be useful because it allows you to save time by not having to find a file directory then run a different command on that directory manually. Additionally, it makes it easier to understand the information since everything is printed into one block rather than separated by multiple commands.
 
-4. An additional use of the `-exec` flag is that you could pair it with the `grep` command.
+4- An additional use of the `-exec` flag is that you could pair it with the `grep` command.
 - For example, if you ran `find ./technical -name "chapter*.txt" -exec grep -Hi sometimes {} \;`, you would get the output:
 
 ```
@@ -122,7 +122,7 @@ $ find ./technical -maxdepth 1 -type f
 
 - Lastly, both examples were inspired by information found in the same link as mentioned [earlier](https://www.redhat.com/sysadmin/linux-find-command).
 
-5. Another interesting use of the `find` command is the `delete` flag.
+5- Another interesting use of the `find` command is the `delete` flag.
 - By using this flag at the end of the find command, it will delete all directories that are found by your given arguments. 
 - For example: `find ./technical -name "chapter*.txt" -delete` deletes every file that matches that name in the given directory as seen here:
 
@@ -130,7 +130,7 @@ $ find ./technical -maxdepth 1 -type f
 
 - This command can be very useful if you want to delete a set of files, but don't want to go in and delete each one manually. By using this command, you can make the arguments of find fit the criteria of your specified files and quickly delete them that way.
 
-6. An important thing to note is that if you combine `delete` with other flags, you can use it to delete things besides files.
+6- An important thing to note is that if you combine `delete` with other flags, you can use it to delete things besides files.
 - For example, you can delete entire directories by using the `-d` flag, we can see this by running `find ./technical -name "911*" -d -delete`:
 
 ![Image](after2.png)
@@ -140,7 +140,7 @@ $ find ./technical -maxdepth 1 -type f
 - An important note is that the `-delete` flag should go at the end of the `find` command and it will not print any output if the rest of your command is formatted properly and runs successfully.
 - Finally, the idea to use this flag was found at [this](https://ss64.com/bash/find.html) link.
 
-7. The last interesting use we will look at is the `-empty` flag.
+7- The last interesting use we will look at is the `-empty` flag.
 - By using this flag at the end of the find command, it will find every file and directory that is empty inside of the given directory.
 - For example, you could run `find ./technical -empty`:
 
@@ -152,9 +152,11 @@ find ./technical -empty
 - Note that there is no output below the command, this means that there are no empty files in the given directory or its subdirectories. This could be useful if someone is running code that is supposed to edit or create files and they could use this to check if any of the files are empty, possibly indicating an error.
 - In the case that there was a file that empty, the command would print the directory of the file or directory that is empty starting from the given directory.
 
-8. The last example will be combning `-empty` with `delete`.
+8- The last example will be combning `-empty` with `delete`.
 - We already know what each of these commands do individually and what they do on their own, but if combined it could be used to help someone remove files that are useless and just taking up space.
 - For example, if we run `find ./technical -empty -delete` it will delete all empty files or directories as seen here (Note that for this example I addded empty files and directories to the `/technical` directory):
 
 ```
+
+
 
