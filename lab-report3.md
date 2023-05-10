@@ -80,4 +80,39 @@ $ find ./technical -maxdepth 1 -type f
 
 - Using the command in this way could be useful because it allows you to save time by not having to find a file directory then run a different command on that directory manually. Additionally, it makes it easier to understand the information since everything is printed into one block rather than separated by multiple commands.
 
-4.
+4. An additional use of the `-exec` flag is that you could pair it with the `grep` command.
+- For example, if you ran `find ./technical -name "chapter*.txt" -exec grep -Hi sometimes {} \;`, you would get the output:
+```
+ ./technical/911report/chapter-11.txt:                and the handicap of hindsight. Hindsight can sometimes see the past clearly-with
+./technical/911report/chapter-11.txt:                has often played this role, and is sometimes controversial for this very
+./technical/911report/chapter-11.txt:            Government agencies also sometimes display a tendency to match capabilities to
+./technical/911report/chapter-11.txt:                plot. Information was not shared, sometimes inadvertently or because of legal
+./technical/911report/chapter-12.txt:                immigration and identity fraud. These can sometimes be detected.
+./technical/911report/chapter-13.1.txt:                authority, sometimes successfully, but often causing friction.
+./technical/911report/chapter-13.1.txt:                office" side of government operations. In the 9/11 story, for example, we sometimes
+./technical/911report/chapter-13.3.txt:                administration's requests significantly, sometimes increasing programs like
+./technical/911report/chapter-13.4.txt:                world, sometimes-as in Thumairy's case-with diplomatic status in the host country.
+./technical/911report/chapter-2.txt:                in or traveling to the Kenya cell sometimes met. Banshiri, al Qaeda's military
+./technical/911report/chapter-3.txt:                cases, but the FBI possessed the classified information sometimes needed as
+./technical/911report/chapter-3.txt:                to them. Mayors in cities with large immigrant populations sometimes imposed limits
+./technical/911report/chapter-3.txt:                groups sometimes cooperated. In the winter of 1999-2000, as will be detailed in
+./technical/911report/chapter-3.txt:                been vested by Congress with the sometimes conflicting mandate of regulating the
+./technical/911report/chapter-3.txt:            The challenge of technology, however, is a daunting one. It is expensive, sometimes
+./technical/911report/chapter-3.txt:                the Clandestine Service. During the 1990s, tension sometimes arose, as it did in the
+./technical/911report/chapter-3.txt:                sometimes energetic and sometimes effective. Terrorist plots were disrupted and
+./technical/911report/chapter-3.txt:                Kandahar, the Taliban capital where he sometimes stayed the night, and his primary
+./technical/911report/chapter-3.txt:                is sometimes controversial for this very reason. It played no role in judging the
+./technical/911report/chapter-3.txt:                and theTaliban leadership were sometimes tense, but the foundation was deep and
+./technical/911report/chapter-6.txt:                concerns encountered in 1998 and 1999. Although the intelligence community sometimes
+./technical/911report/chapter-6.txt:                the summer of 2001 were marked by sometimes heated disagreements about ongoing
+./technical/911report/chapter-7.txt:                two were aggressive, rude, and sometimes even fought with him to take over the
+./technical/911report/chapter-7.txt:                Arabia that borders Yemen; this weakly policed area is sometimes called "the wild
+```
+
+- This specific command could be very helpful because it allows you to quickly pass through files and search them for lines that contain a given word, but besides that it also tells you exactly what file they came from so it's easier to find later.
+
+- Lastly, both examples were inspired by information found in the same link as mentioned [earlier](https://www.redhat.com/sysadmin/linux-find-command).
+
+5. Another interesting use of the `find` command is the `delete` flag.
+- By using this flag at the end of the find command, it will delete all directories that are found by your given arguments. 
+- For example: `find ./technical -name "chapter*.txt" -delete` deletes every file that matches that name in the given directory as seen here:
