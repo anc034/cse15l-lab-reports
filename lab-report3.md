@@ -53,7 +53,7 @@ i.e., -maxdepth affects tests specified before it as well as those specified aft
 
 ```
 $ find ./technical -maxdepth 1 -type f
-
+-----
 ```
 
 - Notice that there is nothing below the command, this is because there are no files in the given directory meaning that the command will not print anything.
