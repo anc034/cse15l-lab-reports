@@ -162,3 +162,13 @@ find ./technical -empty
 find ./technical -empty -delete
 
 ```
+
+- As we can see above, this command actually didn't print anything. This has to do with the fact that the `-delete` flag has to go last in the command and that flag does not return anything upon a successful run. If this flag wasn't here the command would've returned the directories of the empty files and empty directory.
+
+- However, we can verify the command worked as seen in the images below.
+
+![Image](before2.png) ![Image](after3.png)
+
+- This combination of commands could be useful if someone is trying to manage space on their device and they are trying to look for files that are seemingly useless. They could use this command to delete any files that are empty since they would not be doing anything. It would allow them to expedite this process since they wouldn't have to search for each empty file manually and then delete each one manually.
+
+- Lastly, the inspiration for this use of `find` came from a combination of commands from [here](https://www.redhat.com/sysadmin/linux-find-command) and [here](https://ss64.com/bash/find.html).
