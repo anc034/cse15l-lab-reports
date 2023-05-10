@@ -116,3 +116,17 @@ $ find ./technical -maxdepth 1 -type f
 5. Another interesting use of the `find` command is the `delete` flag.
 - By using this flag at the end of the find command, it will delete all directories that are found by your given arguments. 
 - For example: `find ./technical -name "chapter*.txt" -delete` deletes every file that matches that name in the given directory as seen here:
+
+![Image](before.png) ![Image](after.png)
+
+- This command can be very useful if you want to delete a set of files, but don't want to go in and delete each one manually. By using this command, you can make the arguments of find fit the criteria of your specified files and quickly delete them that way.
+
+6. An important thing to note is that if you combine `delete` with other flags, you can use it to delete things besides files.
+- For example, you can delete entire directories by using the `-d` flag, we can see this by running `find ./technical -name "911*" -d -delete`:
+
+![Image](after2.png)
+
+- As we saw above, the 911report directory existed, and would've been at the top of the technical directory, but it has been deleted and the biomed directory is at the top now.
+- This command can be useful if the user has a large set of directories they need to get rid of and it's important because it shows you can make this command differentiate between files and directories by using these additional flags.
+- An important note is that the `-delete` flag should go at the end of the `find` command and it will not print any output if the rest of your command is formatted properly and runs successfully.
+- Finally, the idea to use this flag was found at [this](https://ss64.com/bash/find.html) link.
