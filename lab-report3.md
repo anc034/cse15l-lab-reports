@@ -130,3 +130,12 @@ $ find ./technical -maxdepth 1 -type f
 - This command can be useful if the user has a large set of directories they need to get rid of and it's important because it shows you can make this command differentiate between files and directories by using these additional flags.
 - An important note is that the `-delete` flag should go at the end of the `find` command and it will not print any output if the rest of your command is formatted properly and runs successfully.
 - Finally, the idea to use this flag was found at [this](https://ss64.com/bash/find.html) link.
+
+7. The last interesting use we will look at is the `-empty` flag.
+- By using this flag at the end of the find command, it will find every file and directory that is empty inside of the given directory.
+- For example, you could run `find ./technical -empty`:
+```
+find ./technical -empty
+
+```
+
