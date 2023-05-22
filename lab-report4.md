@@ -37,3 +37,25 @@
 - If you followed these steps correctly, the Java files will have compiled and will run the tests showing if there are any failures in the terminal as seen below.
 
 ![Image](failures.png)
+
+- Now that we've run the tests and noted that some tests failed, we want to edit the file and fix them.
+
+- To do this, we want to type the `vim ListExamples.java` command and type `<enter>`.
+
+![Image](vim.png)
+
+- To fix the error you will need to make the following inputs: `<4> <3> <j> <1> <1> <l> <x> <i> <2> <esc> <:> <w> <q> <enter>`
+
+![Image](vimEdited.png)
+
+- If you did these steps in the correct order, they would have directed you to the correct line in the Java file that was opened in vim and then would've made the correct edit to fix the code. Lastly, it would've saved the changes and exited vim.
+
+- To confirm that we did this correctly, we can recompile and rerun the Java files from earlier to test that our changes were saved and worked properly.
+
+- There are two ways to do this, we can simply repeat the earlier steps where we copied the commands from the lab writeup and pasted them into the terminal or we can use `<Ctrl-R>`.
+
+- If we opt to use the second method, type `<Ctrl-R>` in the terminal, then type `javac` and type `<enter>`. After this type `java` and press `<space>` then type `<enter>`.
+
+- Using either of the two methods, this should rerun the tests we ran earlier and should show that both tests ran successfully and there are no errors.
+
+![Image](successfulRun.png)
