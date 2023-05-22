@@ -59,3 +59,33 @@
 - Using either of the two methods, this should rerun the tests we ran earlier and should show that both tests ran successfully and there are no errors.
 
 ![Image](successfulRun.png)
+
+- Now that we know the code is fixed, it's time to update it on GitHub since up until now, we've only updated the files locally.
+
+- To do this we first want to type the `git add ListExamples.Java` command in our terminal and type `<enter>`
+
+- By running this command, we are effectively saying that the next time the `git commit` command is ran, we want that file to be commited. 
+
+- As you might guess, the next step would be to type the `git commit -m "fixed error in ListExamples` command and then type `<enter>`.
+
+- This command is commiting any changes based on the what files you've run the `git add` command with. The `-m` modifier followed by a string is meant to be an update message essentially stating what you have changed with this commit.
+
+![Image](gitAdd.png) ![Image](gitCommit.png)
+
+- An important thing to note is that we get a confirmation message at the bottom if the commit was successful and it shows the name of the person commiting and it shows how many files were changed, inserted, and deleted.
+
+- Now that we've done this, we just have one command left to run. We need to actually push the changes we've commited to our online GitHub repository.
+
+- To do this, we want to type the `git push origin main` command and type `<enter>`.
+
+- This command is pushing our changes to the GitHub repository we cloned from. The origin variable is designated as that SSH link we cloned from at the start and main is simply the branch we are using. 
+
+- Note: This step would fail if you copied the HTTPS link rather than the SSH link at the start of this process. Additionally, this assumes you already created an SSH key that's linked to your GitHub account as mentioned earlier in the lab writeup. Otherwise, you would not be able to push without entering your account information like we do here.
+
+![Image](gitPush.png)
+
+- We can see that we get a confirmation the changes from our commit successfully pushed to our GitHub repository. 
+
+- If we want to confirm we can go back to the website and see that the files have indeed been updated with our changes from the terminal.
+
+- After this, you should have successfully edited files using Vim and the Command Line. If any steps failed, make sure you have completed the steps prior to this from the lab writeup mentioned earlier and make sure you are following all steps correctly.
