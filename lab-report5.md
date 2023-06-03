@@ -18,6 +18,8 @@
 
 - In this step, we are acting as the TA for this student and will give advice so they can definitively identify the bug based on the EdStem post shown above.
 
+- Based on the post, we can see that the error occurs at line 3 in the Multiply.java file. As a result, my suggestion to the student would be to create a print statement using `System.out.println` and place it on the line directly before the code that's currently on line 3. I would advise them to print the variable that is being parsed so that we can identify if it is correct or if it is the source of the bug. (Note: We know the error comes from `Integer.parseInt` on line 3 by looking at the Ed
+
 
 
 
